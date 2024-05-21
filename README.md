@@ -2,41 +2,24 @@
 
 ## Overview
 
-Welcome, coders! This is the final session of our MERN Stack project. In this session, we will guide you through integrating the frontend and backend of our Job Finder application using MongoDB, ExpressJS, ReactJS, NodeJS, and Tailwind CSS for styling the user interface. After completing the integration, we will show you how to deploy the application to the internet.
+Welcome to the Job Finder Application! The Job Finder Application is a full-stack web application designed to facilitate job searching and application management for users, as well as job posting and candidate management for companies. Built using the MERN stack (MongoDB, ExpressJS, ReactJS, NodeJS) and styled with Tailwind CSS, this application provides a seamless and responsive user experience.
 
-## Get Started
+## Features
+## Applicant Features
+**User Authentication**: Users can sign up and log in to their accounts.
+**Responsive Design**: The application is styled with Tailwind CSS, ensuring a responsive and visually appealing interface.
+Applicant Features
+**Job Listings**: Authenticated users can view job listings, search for jobs, and filter them by criteria such as location, job type, and salary range.
+**Job Application**: Users can apply for jobs directly through the application.
+**Resume Upload**: Applicants can upload their resumes during the job application process.
+**Application Management**: Users can view the status of their job applications and manage their application history.
+## Company Features
+**Job Posting**: Admin users can post new job listings, specifying details such as job title, description, location, salary range, and job type.
+**Job Management**: Companies can manage their job postings, including editing and deleting job listings.
+Application Management: Companies can view and manage applications received for their job postings, including viewing applicant resumes and updating application statuses.
+## Project Structure
+The project is divided into two main parts:
 
-### Backend (Server)
+**Backend**: Implemented with NodeJS, ExpressJS, and MongoDB.
+**Frontend**: Implemented with ReactJS and styled with Tailwind CSS
 
-1. **Navigate to the Server Directory**
-   - Move to the server directory using the command: `cd server`
-
-2. **Create a .env file**
-   - Create a `.env` file in the server directory and add the following variables:
-      i. `MONGODB_URL` = `database connection string`
-      ii. `JWT_SECRET_KEY` = `your secret key`
-      iii. `PORT` = `8800`
-      iv. `AUTH_EMAIL` = `email address`
-      v. `AUTH_PASSWORD` = `email access password`
-      vi. `APP_URL` = `http://localhost:8800/api-v1`
-
-      Note: We recommend using a Hotmail account to send verification emails, as it is reliable and requires no additional configuration. Also, remember to change `APP_URL` when deploying your app, or use localhost with the appropriate port number.
-
-3. **Install Dependencies**
-   - Run `npm install` to install the required packages.
-   
-4. **Start the Server**
-   - Run `npm start` to start the server on `http://localhost:8800`
-
-### Frontend (Client)
-
-1. **Create a .env file**
-   - In the root folder of the client, create a `.env` file and add an environment variable named `REACT_APP_CLOUDINARY_ID`. This variable will store the Cloudinary cloud name.
-
-2. **Install Dependencies**
-   - Run `npm install` to install all client-side dependencies.
-
-3. **Start the Client**
-   - Run `npm start` to start the client on `http://localhost:3000`
-
-Now you're all set! Happy coding and building your MERN Stack Job Finder application.
